@@ -10,7 +10,7 @@
 export default {
   name: 'utils-app',
   created() {
-    console.log('==', this.$urlToolkit.getUrls({ urlKey: 'ccUrl' }));
+    console.log('==', this.$urlToolkit.getUrls({ urlKey: 'ccUrl', environment: 'beta' }));
   },
 };
 </script>

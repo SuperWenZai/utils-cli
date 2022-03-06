@@ -7,10 +7,14 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import UrlToolkit from './utils/urlToolkit';
+import VueBus from './plugins/vue-bus';
+import './assets/css';
 
 Vue.config.productionTip = false;
 
-Vue.prototype.$urlToolkit = new UrlToolkit({
+Vue.use(VueBus);
+
+Vue.use(UrlToolkit, {
   projectName: 'coms',
 });
 
